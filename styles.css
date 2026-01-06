@@ -508,3 +508,8 @@ input[type="submit"]:hover:enabled {
       font-size: 2rem;
     }
 }
+
+.email > span:nth-child(2) {
+	display: none;
+}
+
