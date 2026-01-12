@@ -1,179 +1,57 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>George McDonagh</title>
-    <script type="text/javascript" src="scripts.js"></script>
-    <link rel="stylesheet" href="styles.css">
-	<style>
-		.email > span.invis {
-			display: none;
-		}
-	</style>
-</head>
-<body>
-    <div id="main">
-    <h1 class="centered-content">George McDonagh</h1>
-    <h3 class="centered-content">Experienced Programmer</h3>
-    <div class="rounded centered-content"><img src="me.jpg" alt="Me in Athens, Greece. May 2024" title="Me in Athens, Greece. May 2024"></div>
-    <div class="content-section">
-		<p><a href="https://github.com/geoorgeous/">github</a></p>
-        <p>I am a professional software engineer with a background in game development and 3D applications.</p>
-        <p>For a summary of my professional work experience you can <a href="georgemcdonagh_cv.pdf">download my resume</a> (48KB)</p>
-        <p><a href="/blog/">Link to my blog</a>
- where I sometimes post articles about things I'm working on. I write 
-these posts primarily for my own benefit, although I would be quite 
-happy if I were to hear others found some value in them.</p>
-    </div>
-    <h2 id="projects" class="centered-content">Projects</h2>
-    <ul class="unstyled-list">
-        <li>
-            <div class="content-section">
-            <h3>Font Rendering <span class="font-weight-normal">(OpenGL, C)</span></h3>
-            <div class="centered-content"><img src="project_thumbnail_font_rendering.png" alt="Thumbnail"></div>
-            <p><a href="https://github.com/geoorgeous/opengl_fonts" target="_blank">Github project</a></p>
-            <p>I haven't written anything for this project yet.</p>
-            <!-- <p>See <a href="https://blog.georgemcdonagh.dev/fontrenderingwithopengl.html">this article</a> I've written for more detail about this project.</p> -->
-            </div>
-        </li>
-        <li>
-            <div class="content-section">
-            <h3>GLTF Parser, Renderer <span class="font-weight-normal">(OpenGL, C)</span></h3>
-            <div class="centered-content"><img src="project_thumbnail_gltf_renderer.png" alt="Thumbnail"></div>
-            <p><a href="https://github.com/geoorgeous/gltf_viewer" target="_blank">Github project</a></p>
-            <p>I haven't written anything for this project yet.</p>
-            </div>
-        </li>
-        <li>
-            <div class="content-section">
-            <h3>JSON Parser in C <span class="font-weight-normal">(C)</span></h3>
-            <p><a href="https://github.com/geoorgeous/c_json_parser" target="_blank">Github project</a></p>
-            <p>As part of my adventures in writing a glTF renderer in C I
- decided that I'd write my own JSON parser (the glTF format used JSON to
- describe the structure of the binary data buffers). At this point I was
- still fairly new to C coming from C++ so I thought it would be a good 
-excercise in getting my head around the language and figuring out what 
-works and what doesn't.</p>
-            <p>I wanted to make the API simple and clean with few 
-dependencies, so it uses my own dyanmically-resizable arrays (think C++ 
-std::vector) and hash table.</p>
-            <p>It was really important that I could rely on this library
- and so I did some rigorous testing with some large JSON files (7000+ 
-lines) and made sure that there were zero memory-leaks with this nice 
-memory monitoring tool I came across called <a href="https://www.deleaker.com/" target="_blank">Deleaker</a>.</p>
-            </div>
-        </li>
-        <li>
-            <div class="content-section">
-            <h3>WebGL Scene Viewer <span class="font-weight-normal">(WebGL, GLSL, JS, HTML, CSS)</span></h3>
-            <div class="centered-content"><img src="project_thumbnail_3dviewer.png" alt="Thumbnail"></div>
-            <p><a href="https://github.com/geoorgeous/webgl_viewer" target="_blank">Github project</a></p>
-            <p>I wanted to play around with 3D rendering in the browser 
-and so I decided to write a 3D scene viewer in JS using the 
-widely-supported WebGL API.</p>
-            <p>You can view a working demo of the viewer <a href="3dviewer/index.html" target="_blank">here</a>.</p>
-            </div>
-        </li>
-        <li>
-            <div class="content-section">
-            <h3>Binary Data Embedder <span class="font-weight-normal">(C)</span></h3>
-            <p><a href="https://github.com/geoorgeous/cbinembed" target="_blank">Github project</a></p>
-            <p>This is a little tool I wrote when I wanted a way of 
-making a 3D application that was a single executable file with zero 
-resource files.</p>
-            <p>The program reads in some arbitrary binary blob and 
-generates a source file and header file which can be compiled in to the 
-target application executable. </p>
-            </div>
-        </li>
-        <li>
-            <div class="content-section">
-            <h3>Vulkan Renderer <span class="font-weight-normal">(Vulkan, C++)</span></h3>
-            <div class="centered-content"><img src="project_thumbnail_vulkan.png" alt="Thumbnail"></div>
-            <p><a href="https://github.com/geoorgeous/mud" target="_blank">Github project</a></p>
-            <p>After using OpenGL for nearly all of my lower-level 
-rendering projects, I finally decided to take the plunge and learn 
-Khronos Group's 'new' low-level graphics API: Vulkan.</p>
-            <p>Since I had heard a lot of discussion around how 
-difficult it was to learn Vulkan I was quite apprehensive going in, but I
- was pleasantly surprised in the end with my experience. Indeed, Vulkan 
-it perhaps less intuitive than the OpenGL API and sacrifices 
-succinctness in the name of verbosity and control but it is incredibly 
-well documented as one would expect from the Khronos Group.</p>
-            </div>
-        </li>
-        <li>
-            <div class="content-section">
-            <h3>Infinite Chunked Terrain Generator, Renderer <span class="font-weight-normal">(OpenGL, C)</span></h3>
-            <div class="centered-content"><img src="project_thumbnail_terrain.png" alt="Thumbnail"></div>
-            <p><a href="https://github.com/geoorgeous/cterrain" target="_blank">Github project</a></p>
-            <p>I actually got the inspiration for this project from playing a lot of <a href="https://www.valheimgame.com/" target="_blank">Valheim</a>.
- I found the stylised lower-quality graphics charming and was inspired 
-by the low-poly deformable terrain to write my own terrain 
-generator/renderer.</p>
-            <p>To achieve the possibility of infinite terrain generation
- I decided to implement a 'chunk' system so that sections of terrain 
-could be loaded in to memory independent of one another.</p>
-            <p>In order to achieve a decent fidelity of the terrain 
-up-close while also being able to render far-away chunks of terrain 
-without setting my GPU on fire I implemented a dynamic LOD algorithm. 
-Essentially this means that the terrain chunks closer to the camera have
- a higher resolution of vertices than further away chunks. As the camera
- moves the chunks automatically regenerate and adjust their LOD so that 
-there is a somewhat predictable and reasonable number of triangles being
- processed for rendering at any one time.</p>
-            <p>For this prototype there's a very simple shader I wrote 
-that blends the most distant chunks of terrain with the background, 
-creating this 'fog' effect.</p>
-            </div>
-        </li>
-        <li>
-            <div class="content-section">
-            <h3>OpenGL on Windows <span class="font-weight-normal">(Win32 API, OpenGL, C)</span></h3>
-            <p><a href="https://github.com/geoorgeous/win32_opengl" target="_blank">Github project</a></p>
-            <p>This project is the result of an exploration in to 
-lower-level Windows application programming with the goal of decreasing 
-third-party dependencies and executable size of some other projects. In 
-the past I've used platform helper libraries such as <a href="https://github.com/glfw/glfw" target="_blank">GLFW 3</a> to handle window creation and platform integration.</p>
-            <p>The Win32 API is basically <em>the</em> API for Windows 
-application development. This project serves as an example or a starting
- point for anyone interested in how you might create a Windows window 
-for a C GUI program. Futhermore, this project provides an example of how
- you might create a window that uses modern OpenGL as a graphics 
-context. By default a Windows window that's created with an OpenGL 
-context only supports OpenGL 1.0. If you want anything more modern than 
-that then it involves a bit more work.</p>
-            <!-- <p><a href="https://blog.georgemcdonagh.dev/win32andopengl.html">I've written an article</a> for an in depth run-down of this project.</p> -->
-            </div>
-        </li>
-        <li>
-            <div class="content-section">
-            <h3>Sōko-ban <span class="font-weight-normal">(JS, HTML Canvas)</span></h3>
-            <div class="centered-content"><a href="sokoban/" target="_blank"><img src="project_thumbnail_sokoban.png" alt="Thumbnail"></a></div>
-            <p><a href="sokoban/" target="_blank">Play</a></p>
-            <p>A mobile-friendly <a href="https://en.wikipedia.org/wiki/Sokoban">Sōko-ban</a> clone written for the browser in vanilla JS (ES6) using the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API">Canvas API</a> for 2D graphics.</p>
-            </div>
-        </li>
-        <li>
-            <div class="content-section">
-            <h3>Miscellaneous</h3>
-            <p>Here are some other things I've made in the past.</p>
-            <ul>
-                <li><p><a href="astarpathfinding/" target="_blank">A* Pathfinding implementation.</a> <i>HTML, JS, CSS</i></p></li>
-                <li><p><a href="sudoku/" target="_blank">Sudoku puzzle interface.</a> <i>HTML, JS, CSS</i></p></li>
-                <li><p><a href="daysgoneby/" target="_blank">Infograph generator showing you how many days you've lived against a 90 year lifetime.</a> <i>HTML, JS, CSS</i></p></li>
-                <li><p><a href="randstrgen/" target="_blank">Random string generator.</a> <i>HTML, JS, CSS</i></p></li>
-                <li><p><a href="https://georgeom.itch.io/pong" target="_blank">PONG clone.</a> <i>C#, XNA</i></p></li>
-                <li><p><a href="https://georgeom.itch.io/space-game-2000" target="_blank">Space Game 2000.</a> <i>XNA, C#</i></p></li>
-                <li><p><a href="https://georgemcdonagh.itch.io/wave-cave" target="_blank">Wave Cave; A UE4 game jam team project.</a> <i>UE4, C++, UE Blueprints</i></p></li>
-                <li><p><a href="jsrpg/" target="_blank">A 2D dungeon-crawler I sometimes work on.</a> <i>HTML5 Canvas, JS, CSS</i></p></li>
-                <li><p>The website you're viewing right now (hosted on my Raspberry Pi!)</p></li>
-            </ul>
-            </div>
-        </li>
-    </ul>
-    <h2 id="contact" class="centered-content">Contact</h2>
-    <div class="content-section">
-		<p>If you'd like to contact me you are welcome to send an email to <em><span class="email">me@<span class="invis">bad.</span>georgemcdonagh.<span class="invis">robot.</span>dev</span></em></p>
-    </div>
-    </div>
-</body></html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>georgemcdonagh.dev</title>
+</head><body><pre>
+    __ _  ___  ___  _ __ __ _  ___ 
+   / _` |/ _ \/ _ \| '__/ _` |/ _ \
+  | (_| |  __| (_) | | | (_| |  __/
+   \__, |\___|\___/|_|  \__, |\___|            _
+    __/ |           | |  __/ |                | |
+   |___/___   ___ __| | |___/_ __   __ _  __ _| |__
+  | '_ ` _ \ / __/ _` |/ _ \| '_ \ / _` |/ _` | '_ \
+  | | | | | | (_| (_| | (_) | | | | (_| | (_| | | | |
+  |_| |_| |_|\___\__,_|\___/|_| |_|\__,_|\__, |_| |_|
+       | |                                __/ |
+     __| | _____   __                    |___/
+    / _` |/ _ \ \ / /
+   | (_| |  __/\ V /
+  (_\__,_|\___| \_/
+
+
+      <a href="./resume/">résumé</a> -- <a href="https://github.com/geoorgeous/">github</a> -- <a href="mailto:me@georgemcdonagh.dev">me@<!--bad.-->georgemcdonagh.<!--robot.-->dev</a>
+
+
+  I am a mage that turns food and water in to code and pixels
+
+
+  Here's some of my work:
+
+    - <a href="https://github.com/geoorgeous/cx/"><!--           -->cx</a>            : Game engine/editor written in C99 "from scratch"
+    - <a href="https://github.com/geoorgeous/cbinembed/"><!--    -->cbinem</a>        : Utility for embedding binary data in to C translation units
+    - <a href="https://github.com/geoorgeous/mud/"><!--          -->mud</a>           : A C++/Vulkan game engine
+    - <a href="https://github.com/geoorgeous/c_json_parser/"><!---->c_json_parser</a> : C Utility for parsing JSON data
+    - <a href="https://github.com/geoorgeous/spsc_fifo/"><!--    -->spsc_fifo</a>     : Single-producer-single-consumer FIFO data structure study
+    - <a href="https://github.com/geoorgeous/opengl_fonts/"><!-- -->opengl_fonts</a>  : Bitmap font rendering in OpenGL
+    - <a href="https://github.com/geoorgeous/.dotfiles/"><!--    -->.dotfiles</a>     : My config files for my dev environment (<a href="https://voidlinux.org/">void</a>/neovim/gnome)
+    - <a href="https://georgemcdonagh.dev/webglviewer/"><!--     -->webgl viewer</a>  : 3D WebGL scene viewer written in JavaScript
+    - <a href="https://georgemcdonagh.dev/sokoban/"><!--         -->sōko-ban</a>      : HTML5 <a href="https://wikipedia.org/wiki/Sokoban">Sōko-ban</a> clone written in JavaScript (mobile friendly)
+
+  ... some older, less documented things:
+
+    - I2C LCD driver  <!--                                                       -->: From-scratch <a href="https://wikipedia.org/wiki/I2C">I2C/IIC protocol</a> driver (arduino, C)
+    - a* pathfinding  <!--                                                       -->: A* pathfinding implementation, demo, and write-up (browser) (HTML5 Canvas, JavaScript)
+    - sudoku          <!--                                                       -->: (browser) (CSS, JavaScript)
+    - days_gone_by    <!--                                                       -->: Infograph generator displaying the number of days you've lived (CSS, JavaScript)
+    - randstrgen      <!--                                                       -->: Random string generator
+    - <a href="https://georgeom.itch.io/pong"><!--           -->pong</a>            : Pong clone with some extra features (2015) (C#, XNA)
+    - <a href="https://georgeom.itch.io/space-game-2000"><!---->space game 2000</a> : 2D XNA game (2015) (C#)
+    - <a href="https://georgeom.itch.io/wave-cave"><!--      -->wave cave</a>       : UE4 game jame (2017) (C++)
+    - browser rpg     <!--                                                       -->: 2D dungeon crawler game with editor and tools (browser) (HTML5 canvas, CSS, JS)
+
+
+      <a href="./resume/">résumé</a> -- <a href="https://github.com/geoorgeous/">github</a> -- <a href="mailto:me@georgemcdonagh.dev">me@<!--bad.-->georgemcdonagh.<!--robot.-->dev</a>
+
+
+</pre></body></html>
